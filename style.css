@@ -1,0 +1,288 @@
+
+  body {
+    background-color: black !important;
+  }
+  #logo {
+    width:70px;
+    padding: 0px 10px 0px 0px;
+  }
+  
+  .nav-link {
+    color: white !important;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+  }
+
+  .navbar-brand {
+    width:70px;
+    padding: 0px 10px 0px 0px;
+  }
+  
+  #Flex1 {
+    display:flex;
+    flex-wrap: wrap;
+    border: 3px solid red;
+  }
+  
+.News {
+background-color: white;
+font-family: 'Oswald', sans-serif
+}
+
+  .NewsImg {
+    flex-basis: 25%;
+    flex-grow: 1;
+  }
+  
+  .NewsP {
+    flex-basis: 75%;
+    flex-grow: 1;
+  }
+  
+  #Flex1Head {
+    flex:1 0 100%;
+  }
+  
+  #copyWrite {
+    text-align:center;
+    /*no change*/
+  }
+
+footer {
+    color:white;
+    background-color: black;
+}
+
+
+
+
+
+
+
+
+/*Quiz below*/
+section{
+    background-color: black;
+}
+  form{
+    margin-top:20px;
+    background-color: black;
+  }
+
+  .quiz-container {
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .quiz-container h1 {
+	text-transform: capitalize;
+	font-size: 70px;
+	position: relative;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+    width:100%;
+    border-bottom: solid; 
+    border-width: 8px !important;
+    border-color: #FFD700 !important;
+    color: white;
+}
+
+  .question {
+    width:45%;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    padding:20px;
+    border: 8px solid #FFD700;
+    color:#000000
+  }
+
+  .question:nth-child(odd){
+    margin-right:5%;
+  }
+
+  .question p{
+    font-size:30px;
+    font-weight: bold;
+  }
+
+  .answers {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+  }
+
+  .answers label:not(:first-child){
+    border-top:1px solid #ffffff;
+  }
+
+  label {
+    padding:10px 0;
+    display: block;
+    margin-bottom: 10px;
+    justify-content: space-between !important;
+  }
+
+  input[type="radio"] {
+    margin-right: 10px;
+  }
+
+  .submit-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #FFD700;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    font-size: 25px;
+    cursor: pointer;
+  }
+
+  .result {
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #000000;
+    border-radius: 5px;
+    text-align: center;
+    color: #FFD700;
+  }
+
+  .d-flex{
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*for timeline*/
+.timeBody{
+    background-color: black;
+}
+
+.pt-100{
+    padding-top:100px;
+}
+.pb-100{
+    padding-bottom:100px;
+}
+.section-title {
+  margin-bottom: 0px;
+  color:#ffffff;
+  background-color: black;
+  font-family: 'Oswald', sans-serif
+}
+.section-title p {
+	font-size: 30px;
+}
+.section-title h4 {
+	text-transform: capitalize;
+	font-size: 70px;
+	position: relative;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+    width:100%;
+    border-bottom: solid 8px #FFD700;
+}
+
+.section-title h3 {
+    font-size: 50px;
+}
+
+#bee {
+    width: 90px;
+}
+
+ul.timeline-list {
+	position: relative;
+	margin: 0;
+	padding: 0
+}
+
+/*the long timeline line*/
+ul.timeline-list:before {
+	position: absolute;
+	content: "";
+	width: 2px;
+	height: 100%;
+	background-color: #FFD700;
+	left: 50%;
+	top: 0;
+	-webkit-transform: translateX(-50%);
+	        transform: translateX(-50%);
+}
+
+ul.timeline-list li {
+	position: relative;
+	clear: both;
+	display: table;
+}
+
+
+  /*the timeline boxes*/
+.timeline_content {
+	border: 8px solid #FFD700;
+	background-color:#fff
+}
+
+
+  /*long paragraphs of timeline - text*/
+ul.timeline-list li .timeline_content {
+	width: 45%;
+	color: #000000;
+	padding: 30px;
+	float: left;
+	text-align: right;
+}
+
+
+ul.timeline-list li:nth-child(2n) .timeline_content {
+	float: right;
+	text-align: left;
+}
+
+
+.timeline_content h4 {
+    font-family: 'Oswald', sans-serif;
+	font-size: 30px;
+	font-weight: 600;
+	margin: 10px 0;
+}
+
+/*the long timeline line DOTS*/
+ul.timeline-list li:before {
+	position: absolute;
+	content: "";
+	width: 25px;
+	height: 25px;
+	background-color: #FFD700;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
+	border-radius: 50%;
+}
+
+/*dates in boxes*/
+.timeline_content span {
+	font-size: 25px;
+	font-weight: 500;
+	color: #000000;
+    font-family: 'Oswald', sans-serif
+}
