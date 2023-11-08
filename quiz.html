@@ -1,0 +1,165 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planet Beyonce</title>
+</head>
+<body id="quizBody">
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <img class="navbar-brand" id="logo" src="https://drive.google.com/uc?export=view&id=12zlP8KyFG5eth6QyB8gLtkoe9w14UL-S">
+    <ul class="nav nav-tabs">
+      <li class="nav-item"><a class="nav-link fs-4" href="http://127.0.0.1:5500/index.html">Home</a></li>
+      <li class="nav-item"><a class="nav-link fs-4" href="http://127.0.0.1:5500/timeline.html">Timeline</a></li>
+      <li class="nav-item"><a class="nav-link fs-4" href="http://127.0.0.1:5500/quiz.html">Quiz</a></li>
+    </ul>
+  </nav>
+
+
+  <section class="experience pt-100 pb-100" id="experience">
+    <div class="quiz-container">
+            <div class="col-xl-8 mx-auto text-center">
+                    <h1>Beyonce Quiz</h1>
+                    <hr>
+            </div>
+        <form id="quiz-form">
+            <div class="d-flex">
+                <div class="question">
+                    <p>1. What is the capital of France?</p>
+                <div class="answers">
+            <label>
+                <input type="radio" name="q1" value="a">
+                Paris
+            </label>
+            <label>
+                <input type="radio" name="q1" value="b">
+                Madrid
+            </label>
+            <label>
+                <input type="radio" name="q1" value="c">
+                London
+            </label>
+            <label>
+                <input type="radio" name="q1" value="d">
+                Rome
+            </label>
+            </div>
+        </div>
+        <br>
+      
+      <div class="question">
+        <p>2. What is the largest planet in our solar system?</p>
+        <div class="answers">
+          <label>
+            <input type="radio" name="q2" value="a">
+            Venus
+          </label>
+          <label>
+            <input type="radio" name="q2" value="b">
+            Mars
+          </label>
+          <label>
+            <input type="radio" name="q2" value="c">
+            Jupiter
+          </label>
+          <label>
+            <input type="radio" name="q2" value="d">
+            Saturn
+          </label>
+        </div>
+      </div>
+      <br>
+      <div class="question">
+        <p>3. Write question here?</p>
+        <div class="answers">
+          <label>
+            <input type="radio" name="q3" value="a">
+            wrong
+          </label>
+          <label>
+            <input type="radio" name="q3" value="b">
+            wrong
+          </label>
+          <label>
+            <input type="radio" name="q3" value="c">
+            wrong
+          </label>
+          <label>
+            <input type="radio" name="q3" value="d">
+            right
+          </label>
+        </div>
+      </div>
+      <br>
+      <div class="question">
+        <p>4. Write question here?</p>
+        <div class="answers">
+          <label>
+            <input type="radio" name="q4" value="a">
+            wrong
+          </label>
+          <label>
+            <input type="radio" name="q4" value="b">
+            wrong
+          </label>
+          <label>
+            <input type="radio" name="q4" value="c">
+            right
+          </label>
+          <label>
+            <input type="radio" name="q4" value="d">
+            wrong
+          </label>
+          </div>
+        </div>
+<!--Between here and...........-->
+          <br>
+          <div class="question">
+            <p>5. Write question here?</p>
+            <div class="answers">
+              <label>
+                <input type="radio" name="q5" value="a">
+                right
+              </label>
+              <label>
+                <input type="radio" name="q5" value="b">
+                wrong
+              </label>
+              <label>
+                <input type="radio" name="q5" value="c">
+                wrong
+              </label>
+              <label>
+                <input type="radio" name="q5" value="d">
+                wrong
+              </label>
+        </div>
+      </div>
+<!--........here is where you duplicate for another question. change the number in the name="q_" part and copy into into javascript-->
+
+
+
+
+
+
+    </div>
+    <button type="submit" class="submit-btn">Submit</button>
+  </form>
+  
+  <div class="result" id="result"></div>
+</div>
+
+
+
+
+  <script src="main.js"></script>
+</body>
+<footer>
+  <p id=copyWright> ©copyright 2023 Team 11 </p>
+</footer>
+</html>
