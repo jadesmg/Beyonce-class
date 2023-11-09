@@ -286,3 +286,57 @@ ul.timeline-list li:before {
 	color: #000000;
     font-family: 'Oswald', sans-serif
 }
+
+
+
+
+
+
+
+
+
+
+/*Photo gallery stuffs*/
+.lightbox-gallery{
+    background-color: black;
+    color: #000;overflow-x: hidden;
+}
+.lightbox-gallery p{
+    color:#fff;
+    font-size: 50px;
+    font-family: 'Oswald', sans-serif;
+}
+.lightbox-gallery h2{
+    font-weight:bold;
+    margin-bottom:40px;
+    padding-top:40px;
+    color:#fff
+}
+
+    @media (max-width:767px){
+        .lightbox-gallery h2{
+            margin-bottom:25px;padding-top:25px;font-size:24px
+        }
+    }
+
+    .lightbox-gallery .intro{
+        font-size:16px;
+        max-width:500px;
+        margin:0 auto 40px;
+    }
+    
+    .lightbox-gallery .intro .fix{
+        margin-bottom:0
+    }
+
+    .lightbox-gallery .photos{
+        padding-bottom:20px
+    }
+
+    .lightbox-gallery .item{
+        padding-bottom:30px
+    }
+
+    .lightbox-gallery .img-fluid{
+        border: 8px solid gold
+    }
