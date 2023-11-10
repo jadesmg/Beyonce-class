@@ -1,0 +1,400 @@
+<!--the same head as all the pages-->
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planet Beyoncé</title>
+</head>
+
+
+<!--the same body as all the pages (except the class of the body)
+includes the navigation bar as this is the same for all pages-->
+<body class="discBody">
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <img class="navbar-brand" id="logo" src="lionCrop.jpg">
+    <ul class="nav nav-tabs">
+      <li class="nav-item"><a class="nav-link fs-4" href="http://127.0.0.1:5500/index.html">Home</a></li>
+      <li class="nav-item"><a class="nav-link fs-4" href="http://127.0.0.1:5500/timeline.html">Timeline</a></li>
+      <li class="nav-item"><a class="nav-link fs-4" href="http://127.0.0.1:5500/discography.html">Discography</a></li>
+      <li class="nav-item"><a class="nav-link fs-4" href="http://127.0.0.1:5500/gallery.html">Gallery</a></li>
+      <li class="nav-item"><a class="nav-link fs-4" href="http://127.0.0.1:5500/quiz.html">Quiz</a></li>
+    </ul>
+  </nav>
+<!--end of the nav bar-->
+
+
+<!--This is the same on all pages with matching head styles 
+  Except the words in the heading-->
+  <section class="experience pt-100 pb-100" id="experience">
+    <div class="quiz-container">
+      <div class="col-xl-8 mx-auto text-center">
+        <h1>Beyoncé Discography</h1>
+        <hr>
+      </div>
+    </div>
+  </section>
+          <!--end of that heading style-->  
+
+
+<!--div's contianing the layout of the cards through bootstrap-->
+<div class="container">
+  <div class="row">
+    <!--end of the layout of the cards that dont repeat-->
+
+
+    <!--card1 1st album - starts with some layout but it repeats for each so that they all have a div-->
+    <div class="col-sm-6 col-md-3">
+      <!--photo of the album cover-->
+      <img src="Dangerously.jpg" class="img-rounded center-block img-responsive">
+<!--the title of the album and the year. Also how it is orientated. Centre was off centre so changed to left-->
+      <div class="text-left">
+        <h4 class="albumTitle">Dangerously in Love<br><small> (2003)</small></h4>
+      </div>
+<!--centre was off centre so orientated left. the button is <a> and contains reference to the collapse list below it id="dangerously"-->
+      <div class="text-left">
+        <a class="btn btn-primary" data-bs-toggle="collapse" href="#dangerously" role="button" aria-expanded="false" aria-controls="dangerously">
+          View Track List
+        </a>
+        <!--the collapse list of singles. starts with a spoitify link to the album-->
+        <div class="collapse" id="dangerously">
+          <div class="well">
+            <ul class="list-group text-left ">
+              <li class="list-group-item spotifyLink text-center"> <a href="https://open.spotify.com/album/6oxVabMIqCMJRYN1GqR3Vf" target="_blank">Listen in Spotify</a></li>
+              <li class="list-group-item">1. Crazy in Love (Featuring Jay-Z)</li>
+              <li class="list-group-item">2. Naughty Girl</li>
+              <li class="list-group-item">3. Baby Boy (Featuring Sean Paul)</li>
+              <li class="list-group-item">4. Hip Hop Star (Featuring Big Boi and Sleepy Brown)</li>
+              <li class="list-group-item">5. Be With You</li>
+              <li class="list-group-item">6. Me, Myself and I</li>
+              <li class="list-group-item">7. Yes</li>
+              <li class="list-group-item">8. Signs (Featuring Missy Elliott)</li>
+              <li class="list-group-item">9. Speechless</li>
+              <li class="list-group-item">10. That's How You Like It (Featuring Jay-Z)</li>
+              <li class="list-group-item">11. The Closer I Get To You (Duet with Luther Vandross)</li>
+              <li class="list-group-item">12. Dangerously In Love 2</li>
+              <li class="list-group-item">13. Gift From Virgo</li>
+              <li class="list-group-item">14. Bienvenue</li>
+              <li class="list-group-item">15. Beyoncé Interlude</li>
+              <li class="list-group-item">16.Work It Out</li>
+              <!--put the delux version singles at the bottom and didnt number them-->
+              <li class="list-group-item">Deluxe Tracks:</li>
+              <li class="list-group-item">Bonnie & Clyde'03 (Featuring Jay-Z)</li>
+              <li class="list-group-item">I Can't Take No More</li>
+              <li class="list-group-item">What's It Gonna Be</li>
+              <!--end of the list of singles-->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+<!--end of the 1st album card - the rest copy this format. if adding another album copy and paste all the album card as your base-->
+
+
+<!--2nd album card and collapse-->
+    <div class="col-sm-6 col-md-3">
+      <img src="Bday.jpg" class="img-rounded center-block img-responsive">
+
+      <div class=" text-left">
+        <h4 class="albumTitle">B'Day<br><small> (2006)</small></h4>
+      </div>
+      <div class="text-left">
+
+        <a class="btn btn-primary" data-bs-toggle="collapse" href="#bday" role="button" aria-expanded="false" aria-controls="bday">
+          View Track List
+        </a>        
+        <div class="collapse" id="bday">
+          <div class="well">
+            <ul class="list-group text-left">
+              <li class="list-group-item spotifyLink text-center"> <a href="https://open.spotify.com/album/77eZ5eMEh3U0KWricrbevO" target="_blank">Listen in Spotify</a></li>
+              <li class="list-group-item">1. Déjà Vu</li>
+              <li class="list-group-item">2. Get Me Bodied</li>
+              <li class="list-group-item">3. Suga Mama</li>
+              <li class="list-group-item">4. Upgrade U (Featuring Jay-Z)</li>
+              <li class="list-group-item">5. Ring The Alarm</li>
+              <li class="list-group-item">6. Kitty Kat</li>
+              <li class="list-group-item">7. Feakum Dress</li>
+              <li class="list-group-item">8. Green Light</li>
+              <li class="list-group-item">9. Irrecplaceable</li>
+              <li class="list-group-item">10. Resentment</li>
+              <li class="list-group-item">11. Check On It (Featuring Bun B and Slim Thug)</li>
+              <li class="list-group-item">Deluxe Tracks:</li>
+              <li class="list-group-item">Encore for the Fans</li>
+              <li class="list-group-item">Listen (From "Dreamgirls")</li>
+              <li class="list-group-item">Beautiful Liar (Featuring Shakira)</li>
+              <li class="list-group-item">Welcome To Hollywood (Featuring Jay-Z)</li>
+              <li class="list-group-item">Flaws and All</li>
+              <li class="list-group-item">Worldwide Woman</li>
+              <li class="list-group-item">If</li>
+              <li class="list-group-item">Amor Gitano</li>
+            
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </div>
+<!--end of 2nd album card and collapse-->
+
+
+<!--3rd album card and collapse-->
+    <div class="col-sm-6 col-md-3">
+      <img src="Sasha.jpg" class="img-rounded center-block img-responsive">
+
+      <div class=" text-left">
+        <h4 class="albumTitle">I am... Sasha Fierce<br><small> (2008)</small></h4>
+      </div>
+      <div class="text-left">
+
+        <a class="btn btn-primary" data-bs-toggle="collapse" href="#sasha" role="button" aria-expanded="false" aria-controls="sasha">
+          View Track List
+        </a>        
+        <div class="collapse" id="sasha">
+          <div class="well">
+            <ul class="list-group text-left">
+              <li class="list-group-item spotifyLink text-center"> <a href="https://open.spotify.com/album/39P7VD7qlg3Z0ltq60eHp7" target="_blank">Listen in Spotify</a></li>
+              <li class="list-group-item">1. If I Were A Boy</li>
+              <li class="list-group-item">2. Halo</li>
+              <li class="list-group-item">3. Disappear</li>
+              <li class="list-group-item">4. Broken-Hearted Girl</li>
+              <li class="list-group-item">5. Ave Maria</li>
+              <li class="list-group-item">6. Smash Into You</li>
+              <li class="list-group-item">7. Satellites</li>
+              <li class="list-group-item">8. That's Why You're Beautiful</li>
+              <li class="list-group-item">9. Single Ladies (Put A Ring On It)</li>
+              <li class="list-group-item">10. Radio</li>
+              <li class="list-group-item">11. Diva</li>
+              <li class="list-group-item">12. Sweet Dreams</li>
+              <li class="list-group-item">13. Video Phone</li>
+              <li class="list-group-item">14. Hello</li>
+              <li class="list-group-item">15. Ego</li>
+              <li class="list-group-item">16. Scared Of Lonely</li>
+              <li class="list-group-item">17. Poison</li>     
+              <li class="list-group-item">Delux Tracks:</li>
+              <li class="list-group-item">Ego (Featuring Kanye West)</li>
+              <li class="list-group-item">Why Don't You Love Me</li>
+              <li class="list-group-item">Honesty</li>
+              <li class="list-group-item">Save The Hero</li>
+              <li class="list-group-item">Disappear</li>
+              <li class="list-group-item">Ave Maria</li> 
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+<!--end of 3rd album card and collapse-->
+
+
+<!--4th album card and collapse-->
+    <div class="col-sm-6 col-md-3">
+      <img src="Four.jpg" class="img-rounded center-block img-responsive">
+
+      <div class=" text-left">
+        <h4 class="albumTitle">4<br><small> (2011)</small></h4>
+      </div>
+      <div class="text-left">
+
+        <a class="btn btn-primary" data-bs-toggle="collapse" href="#four" role="button" aria-expanded="false" aria-controls="four">
+          View Track List
+        </a>        
+        <div class="collapse" id="four">
+          <div class="well">
+            <ul class="list-group text-left">
+              <li class="list-group-item spotifyLink text-center"> <a href="https://open.spotify.com/album/1gIC63gC3B7o7FfpPACZQJ" target="_blank">Listen in Spotify</a></li>
+              <li class="list-group-item">1. Love On Top</li>
+              <li class="list-group-item">2. Party (Featuring Andre 3000)</li>
+              <li class="list-group-item">3. Schoolin' Life</li>
+              <li class="list-group-item">4. Countdown</li>
+              <li class="list-group-item">5. I Miss You</li>
+              <li class="list-group-item">6. Dance For You</li>
+              <li class="list-group-item">7. I Care</li>
+              <li class="list-group-item">8. Rather Die Young</li>
+              <li class="list-group-item">9. 1 + 1</li>
+              <li class="list-group-item">10. End Of Time</li>
+              <li class="list-group-item">11. Run The World (Girls)</li>
+              <li class="list-group-item">12. Best Thing I Never Had</li>
+              <li class="list-group-item">13. Start Over</li>
+              <li class="list-group-item">14. I was Here</li>
+              <li class="list-group-item">Deluxe Tracks:</li>
+              <li class="list-group-item">Dreaming</li>            
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--end of 4th album card and collapse-->
+
+
+<!--5th album card and collapse-->
+    <div class="col-sm-6 col-md-3">
+      <img src="BeyonceAlbum.jpg" class="img-rounded center-block img-responsive">
+
+      <div class=" text-left">
+        <h4 class="albumTitle">Beyoncé<br><small> (2014)</small></h4>
+      </div>
+      <div class="text-left">
+
+        <a class="btn btn-primary" data-bs-toggle="collapse" href="#beyonceAlbum" role="button" aria-expanded="false" aria-controls="beyonceAlbum">
+          View Track List
+        </a>        
+        <div class="collapse" id="beyonceAlbum">
+          <div class="well">
+            <ul class="list-group text-left">
+              <li class="list-group-item spotifyLink text-center"> <a href="https://open.spotify.com/album/5JSDDzvVmUX1axvnUH3ZJy" target="_blank">Listen in Spotify</a></li>
+              <li class="list-group-item">1. Pretty Hurts</li>
+              <li class="list-group-item">2. Haunted</li>
+              <li class="list-group-item">3. Drunk In Love (Featuring Jay-Z)</li>
+              <li class="list-group-item">4. Blow</li>
+              <li class="list-group-item">5. No Angel</li>
+              <li class="list-group-item">6. Partition</li>
+              <li class="list-group-item">7. Jealous</li>
+              <li class="list-group-item">8. Rocket</li>
+              <li class="list-group-item">9. Mine (featuring Drake)</li>
+              <li class="list-group-item">10. XO</li>
+              <li class="list-group-item">11. Flawless</li>
+              <li class="list-group-item">12. Superpower</li>
+              <li class="list-group-item">13. Heaven</li>
+              <li class="list-group-item">14. Blue (featuring Blue Ivy)</li>            
+              <li class="list-group-item">Delux tracks:</li>
+              <li class="list-group-item">Flawless (Featuring Nicki Minaj)</li>            
+              <li class="list-group-item">Ring Off</li>
+              <li class="list-group-item">Blow (featuring Pharrell)</li>
+              <li class="list-group-item">Standing On The Sun (Featuring Mr Vegas)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>    
+<!--end of 5th album card and collapse-->
+
+
+<!--6th album card and collapse-->
+    <div class="col-sm-6 col-md-3">
+      <img src="lemonade.jpg" class="img-rounded center-block img-responsive">
+
+      <div class=" text-left">
+        <h4 class="albumTitle">Lemonade<br><small> (2016)</small></h4>
+      </div>
+      <div class="text-left">
+
+        <a class="btn btn-primary" data-bs-toggle="collapse" href="#lemonade" role="button" aria-expanded="false" aria-controls="lemonade">
+          View Track List
+        </a>        
+        <div class="collapse" id="lemonade">
+          <div class="well">
+            <ul class="list-group text-left">
+              <li class="list-group-item spotifyLink text-center"> <a href="https://open.spotify.com/album/7dK54iZuOxXFarGhXwEXfF" target="_blank">Listen in Spotify</a></li>
+              <li class="list-group-item">1. Pray You Catch Me</li>
+              <li class="list-group-item">2. Hold Up</li>
+              <li class="list-group-item">3. Don't Hurt Yourself (Featuring Jack White)</li>
+              <li class="list-group-item">4. Sorry</li>
+              <li class="list-group-item">5. 6 Inch (Featuring The Weeknd)</li>
+              <li class="list-group-item">6. Daddy Lessons</li>
+              <li class="list-group-item">7. Love Drought</li>
+              <li class="list-group-item">8. Sandcastles</li>
+              <li class="list-group-item">9. Forward (Featuring James Blake)</li>
+              <li class="list-group-item">10. Freedom (Featuring Kendrick Lamar)</li>
+              <li class="list-group-item">11. All Night</li>
+              <li class="list-group-item">12. Formation</li>
+              <li class="list-group-item">13. Sorry</li>           
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+<!--end of 6th album card and collapse-->
+
+
+<!--7th album card and collapse-->
+    <div class="col-sm-6 col-md-3">
+      <img src="lionKing.jpg" class="img-rounded center-block img-responsive">
+
+      <div class=" text-left">
+        <h4 class="albumTitle">Lion King: The Gift<br><small> (2019)</small></h4>
+      </div>
+      <div class="text-left">
+
+        <a class="btn btn-primary" data-bs-toggle="collapse" href="#lionKing" role="button" aria-expanded="false" aria-controls="lionKing">
+          View Track List
+        </a>        
+        <div class="collapse" id="lionKing">
+          <div class="well">
+            <ul class="list-group text-left">
+              <li class="list-group-item spotifyLink text-center"> <a href="https://open.spotify.com/album/552zi1M53PQAX5OH4FIdTx" target="_blank">Listen in Spotify</a></li>
+              <li class="list-group-item">1. Bigger</li>
+              <li class="list-group-item">2. Find Your Way Back (Circle Of Life)</li>
+              <li class="list-group-item">3. The Nile (Featuring Kendrick Lamar)</li>
+              <li class="list-group-item">4. Mood 4 Eva (Featuring Jay-Z and Childish Gambino)</li>
+              <li class="list-group-item">5. Water (Featuring Salatile and Pharrell)</li>
+              <li class="list-group-item">6. Come Home</li>
+              <li class="list-group-item">7. Brown Skin Girl (Featuring St. Jhn, Wizkid and Blue Ivy)</li>
+              <li class="list-group-item">8. Otherside</li>
+              <li class="list-group-item">9. Already (Featuring Shatta Wale)</li>
+              <li class="list-group-item">10. My Power (Featuring Tierra Whack Busiswa, Yemi Alade and Moonchild Sanelly and 'Spirit')</li>
+              <li class="list-group-item">Dulux Tracks:</li>
+              <li class="list-group-item">Black Parade</li>         
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+<!--end of 7th album card and collapse-->
+
+
+<!--8th album card and collapse-->
+    <div class="col-sm-6 col-md-3">
+      <img src="renaissance.jpg" class="img-rounded center-block img-responsive">
+
+      <div class=" text-left">
+        <h4 class="albumTitle">Renaissance<br><small> (2022)</small></h4>
+      </div>
+      <div class="text-left">
+
+        <a class="btn btn-primary" data-bs-toggle="collapse" href="#renaissance" role="button" aria-expanded="false" aria-controls="renaissance">
+          View Track List
+        </a>        
+        <div class="collapse" id="renaissance">
+          <div class="well">
+            <ul class="list-group text-left">
+              <li class="list-group-item spotifyLink text-center"> <a href="https://open.spotify.com/album/6FJxoadUE4JNVwWHghBwnb" target="_blank">Listen in Spotify</a></li>
+              <li class="list-group-item">1. I'm That Girl</li>
+              <li class="list-group-item">2. Cozy</li>
+              <li class="list-group-item">3. Alien Superstar</li>
+              <li class="list-group-item">4. Cuff It</li>
+              <li class="list-group-item">5. Energy</li>
+              <li class="list-group-item">6. Break My Soul</li>
+              <li class="list-group-item">7. Church Girl</li>
+              <li class="list-group-item">8. Plastic Off The Sofa</li>
+              <li class="list-group-item">9. Virgo's Groove</li>
+              <li class="list-group-item">10. Move</li>
+              <li class="list-group-item">11. Heated</li>
+              <li class="list-group-item">12. Thique</li>
+              <li class="list-group-item">13. All Up In Your Mind</li>   
+              <li class="list-group-item">14. America Has A Problem</li> 
+              <li class="list-group-item">15. Pure/Honey</li>
+              <li class="list-group-item">16. Summer Renaissance</li>         
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+<!--end of 8th album card and collapse-->
+
+<!--closing the container and row divs that come before all of the cards. if adding albums put them above this.-->
+  </div>
+</div>
+
+<!--same ending as every page: bootstrap and javascript-->
+  <script src="main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+<footer>
+  <p id=copyWright> ©copyright 2023 Team 11 </p>
+</footer>
+</html>
