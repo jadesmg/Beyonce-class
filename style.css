@@ -1,56 +1,55 @@
-
-  body {
+/*every page has black background*/
+body {
     background-color: black !important;
-  }
-  #logo {
-    width:70px;
-    padding: 0px 10px 0px 0px;
-  }
-  
-  .nav-link {
+}
+
+/*footer - all pages*/
+footer {
+    color:white;
+    background-color: black;
+}
+
+/*appearance of nav-bar links*/
+.nav-link {
     color: white !important;
     font-weight: bold;
     font-family: 'Oswald', sans-serif;
-  }
+}
 
-  .navbar-brand {
+/*the small image on the right of the nav bar - logo*/
+.navbar-brand {
     width:70px;
-    padding: 0px 10px 0px 0px;
-  }
-  
-  #Flex1 {
+    padding: 0;
+}
+
+/*breaking news flex-box - placeholder*/
+#Flex1 {
     display:flex;
     flex-wrap: wrap;
     border: 3px solid red;
-  }
-  
+}
+
+/*news appearance - placeholder*/
 .News {
 background-color: white;
 font-family: 'Oswald', sans-serif
 }
 
-  .NewsImg {
+/*news image - placeholder*/
+.NewsImg {
     flex-basis: 25%;
     flex-grow: 1;
-  }
+}
   
-  .NewsP {
+/*news paragraphs - placeholder*/
+.NewsP {
     flex-basis: 75%;
     flex-grow: 1;
-  }
-  
-  #Flex1Head {
-    flex:1 0 100%;
-  }
-  
-  #copyWrite {
-    text-align:center;
-    /*no change*/
-  }
+}
 
-footer {
-    color:white;
-    background-color: black;
+/*flexbox news heading - placeholder*/
+#Flex1Head {
+    flex:1 0 100%;
 }
 
 
@@ -61,24 +60,22 @@ footer {
 
 
 /*Quiz below*/
-section{
-    background-color: black;
-}
-  form{
+/*bigger gap between title and first question box*/
+form{
     margin-top:20px;
-    background-color: black;
-  }
+}
 
-  .quiz-container {
+/*the text style & __________________________flexbox - investigate if all are necessary*/
+.quiz-container {
     width: 100%;
     margin: 0 auto;
     font-family: 'Oswald', sans-serif;
     display: flex;
     flex-direction: column;
-  }
+}
 
-  .quiz-container h1 {
-	text-transform: capitalize;
+/*the title text specs*/
+.quiz-container h1 {
 	font-size: 70px;
 	position: relative;
 	padding-bottom: 20px;
@@ -90,47 +87,45 @@ section{
     color: white;
 }
 
-  .question {
+/*the question boxes formatting*/
+.question {
     width:45%;
     margin-bottom: 20px;
     background-color: #ffffff;
     padding:20px;
     border: 8px solid #FFD700;
     color:#000000
-  }
+}
 
-  .question:nth-child(odd){
-    margin-right:5%;
-  }
-
-  .question p{
+/*question text*/
+.question p{
     font-size:30px;
     font-weight: bold;
-  }
+}
 
-  .answers {
+/*answers text*/
+.answers {
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
     font-size: 20px;
-  }
+}
 
-  .answers label:not(:first-child){
-    border-top:1px solid #ffffff;
-  }
-
-  label {
+/*essentially makes the boxes bigger and the answer options more spaced out - optional*/
+label {
     padding:10px 0;
     display: block;
     margin-bottom: 10px;
     justify-content: space-between !important;
-  }
+}
 
-  input[type="radio"] {
+/*space between dot to select answer and the answer option text*/
+input[type="radio"] {
     margin-right: 10px;
-  }
+}
 
-  .submit-btn {
+/*submit button*/
+.submit-btn {
     display: block;
     margin: 20px auto;
     padding: 10px 20px;
@@ -140,9 +135,10 @@ section{
     border-radius: 5px;
     font-size: 25px;
     cursor: pointer;
-  }
+}
 
-  .result {
+/*numberical score*/
+.result {
     font-weight: bold;
     font-size: 40px;
     margin-top: 20px;
@@ -151,48 +147,41 @@ section{
     border-radius: 5px;
     text-align: center;
     color: #FFD700;
-  }
+}
 
-  .d-flex{
+/*without this it would all sit in a row*/
+.d-flex{
     display: flex; 
     flex-direction: column; 
     align-items: center;
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-  /*for timeline*/
-.timeBody{
-    background-color: black;
 }
 
+
+
+
+
+
+/*for timeline*/
+/*Padding Top 100 - stops the title touching the nav bar at the top (the bottom version wasnt necessary but i left the class in incase it become necessary later)*/
 .pt-100{
     padding-top:100px;
 }
-.pb-100{
-    padding-bottom:100px;
-}
+
+/*title writing colour etc*/
 .section-title {
-  margin-bottom: 0px;
-  color:#ffffff;
-  background-color: black;
-  font-family: 'Oswald', sans-serif
+    margin-bottom: 0px;
+    color:#ffffff;
+    background-color: black;
+    font-family: 'Oswald', sans-serif
 }
-.section-title p {
+
+/*the "from a child of destiny..." bit*/
+  .section-title p {
 	font-size: 30px;
 }
+
+/*the "Queen Bee" title*/
 .section-title h4 {
-	text-transform: capitalize;
 	font-size: 70px;
 	position: relative;
 	padding-bottom: 20px;
@@ -201,18 +190,21 @@ section{
     border-bottom: solid 8px #FFD700;
 }
 
+/*the "a Timeline" subheading*/
 .section-title h3 {
     font-size: 50px;
 }
 
+/*bee image*/
 #bee {
     width: 90px;
 }
 
+/*without this the dots on the timeline sit right of the line*/
 ul.timeline-list {
 	position: relative;
 	margin: 0;
-	padding: 0
+	padding: 0;
 }
 
 /*the long timeline line*/
@@ -228,19 +220,18 @@ ul.timeline-list:before {
 	        transform: translateX(-50%);
 }
 
+/*the spacing for the timeline - without this its a mess*/
 ul.timeline-list li {
 	position: relative;
 	clear: both;
 	display: table;
 }
 
-
-  /*the timeline boxes*/
+/*the timeline boxes*/
 .timeline_content {
 	border: 8px solid #FFD700;
 	background-color:#fff
 }
-
 
   /*long paragraphs of timeline - text*/
 ul.timeline-list li .timeline_content {
@@ -251,13 +242,13 @@ ul.timeline-list li .timeline_content {
 	text-align: right;
 }
 
-
+/*every second timeline card goes to the right*/
 ul.timeline-list li:nth-child(2n) .timeline_content {
 	float: right;
 	text-align: left;
 }
 
-
+/*formatting of text inside the timeline cards*/
 .timeline_content h4 {
     font-family: 'Oswald', sans-serif;
 	font-size: 30px;
@@ -292,51 +283,86 @@ ul.timeline-list li:before {
 
 
 
-
-
-
-
-/*Photo gallery stuffs*/
-.lightbox-gallery{
-    background-color: black;
-    color: #000;overflow-x: hidden;
-}
+/*Photo gallery*/
+/*the writing style*/
 .lightbox-gallery p{
     color:#fff;
     font-size: 50px;
     font-family: 'Oswald', sans-serif;
 }
-.lightbox-gallery h2{
-    font-weight:bold;
-    margin-bottom:40px;
-    padding-top:40px;
-    color:#fff
+
+/*the space at the bottom of the pics - otherwise they touch*/
+.lightbox-gallery .item{
+    padding-bottom:30px
 }
 
-    @media (max-width:767px){
-        .lightbox-gallery h2{
-            margin-bottom:25px;padding-top:25px;font-size:24px
-        }
-    }
+/*pic border when not touching*/
+.lightbox-gallery .img-fluid{
+    border: 2px solid white
+}
 
-    .lightbox-gallery .intro{
-        font-size:16px;
-        max-width:500px;
-        margin:0 auto 40px;
-    }
-    
-    .lightbox-gallery .intro .fix{
-        margin-bottom:0
-    }
+/*pic border when hovering over it*/
+.lightbox-gallery .img-fluid:hover {
+    border: 4px solid gold !important;
+}
 
-    .lightbox-gallery .photos{
-        padding-bottom:20px
-    }
 
-    .lightbox-gallery .item{
-        padding-bottom:30px
-    }
 
-    .lightbox-gallery .img-fluid{
-        border: 8px solid gold
-    }
+
+/*discography*/
+/*behind the dropdown list colour - only see at the rounded colours so just made black to match the background of the page*/      
+.well {
+    background-color: black;
+}
+
+/*below 2 are sizes of images- medium screen and small screen*/
+.col-md-3 img {
+    height: 200px;
+    width: 200px;
+}
+      
+.col-sm-6 img {
+    height: 200px;
+    width: 200px;
+}
+      
+/*to prevent dropdown list touching the image below it- little bit of space*/
+.collapse {
+    margin-bottom: 30px;
+}
+
+/*little bit of space for the button*/
+.btn {
+    margin: 10px;
+}
+      
+/*unsure why below didnt work without !important - sure there's a reason (mayb e jsut bootstrap formatting) but this solved it*/
+/*colours of the button before being touched*/
+.btn-primary {
+    background: black !important;
+    border: 1px solid gold !important;
+    color: gold !important;
+}
+      
+/*colour of the button when hovering over it*/
+.btn-primary:hover {
+    background-color: grey !important;
+    border: 1px solid lightslategrey !important;
+}
+      
+/*colour of the button after it's been clicked*/
+.btn-primary:focus {
+    background-color: white !important;
+    border: 1px solid lightslategrey !important;
+    color: rgb(0, 0, 0) !important;
+}
+
+/*bolding the spoitify link*/
+.spotifyLink {
+    font-weight: bolder !important;
+}
+
+/*making the text of the album title white*/
+.albumTitle {
+    color: white !important;
+}
