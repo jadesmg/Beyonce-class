@@ -579,7 +579,13 @@ cannot work out how to colour the accordions*/
 	    display:none;
     }
 
-	#experience {
+    /*Awards title wasnt fitting right*/
+    #experience {
         font-size: 60px;
+    }
+
+    /*awards titles wasnt fitting right*/
+    #emoji {
+        font-size: 30px;
     }
 }
