@@ -578,4 +578,8 @@ cannot work out how to colour the accordions*/
     ul.timeline-list li:before {
 	    display:none;
     }
+
+	#experience {
+        font-size: 60px;
+    }
 }
