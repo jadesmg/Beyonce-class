@@ -213,7 +213,6 @@ input[type="radio"] {
 .result {
     font-weight: bold;
     font-size: 40px;
-    margin-top: 20px;
     padding: 10px;
     background-color: #000000;
     border-radius: 5px;
@@ -408,7 +407,7 @@ ul.timeline-list li:before {
     margin: 10px;
 }
       
-/*unsure why below didnt work without !important - sure there's a reason (mayb e jsut bootstrap formatting) but this solved it*/
+/*unsure why below didnt work without !important - sure there's a reason (maybe just bootstrap formatting) but this solved it*/
 /*colours of the button before being touched*/
 .btn-primary {
     background: black !important;
@@ -472,4 +471,111 @@ cannot work out how to colour the accordions*/
     margin-bottom: 50px;
     margin-left: 50px;
     margin-right: 50px;
+}
+
+
+
+
+
+/*media variations - responsive*/
+
+@media screen and (max-width: 768px) {
+    /*index page*/
+    /*welcome message section*/
+    .welcome1 {
+        flex-direction: column;
+    }
+
+    .mobile-welcome{
+        flex-direction:row;
+    }
+    .welcome1 h1{
+        margin-left: 5px;
+        margin-top: 5px
+    }
+    
+    .welcome1 p{
+        margin-left: 5px;
+    }
+    
+    .welcome1 img{
+        height: 200px;
+        margin-left: 5px;
+        margin-right: 0px;
+    }
+
+    /*video section*/
+    .embed-border {
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-bottom: 5px
+    }
+    
+    .white{
+        margin-left: 5px;
+    }
+
+
+
+    /*awards page*/
+    /*the title - removing the space between emojis and word*/
+    #hide{
+        display: none;
+    }
+
+    /*making the accordions column organised and changing border appearance for mobiles*/
+    .allAccordions {
+        flex-direction: column;
+        border-bottom: none;
+    }
+    
+    /*smalled margins and changing the border appearance for mobiles*/
+    .eachAccordion {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-bottom: 10px;
+        border-bottom: double 6px gold
+    }
+
+
+
+    /*making question box bigger on phones as only took up percentage of space*/
+    .question {
+        width:100%;
+    }
+
+
+
+
+
+
+
+    /*timeline page*/
+    /*the long timeline line*/
+    ul.timeline-list:before {
+        display: none;
+    }
+
+    /*long paragraphs of timeline - text*/
+    ul.timeline-list li .timeline_content {
+	    width: 80%;
+	    color: #000000;
+	    padding: 10px;
+	    float: center;
+	    text-align: left;
+        margin-bottom: 15px;
+    }
+
+    /*every second timeline card goes to the right*/
+    ul.timeline-list li:nth-child(2n) .timeline_content {
+	    float: center;
+	    text-align: right;
+    }
+
+    /*the long timeline line DOTS*/
+    ul.timeline-list li:before {
+	    display:none;
+    }
 }
