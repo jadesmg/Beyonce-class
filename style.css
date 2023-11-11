@@ -22,6 +22,78 @@ footer {
     padding: 0;
 }
 
+
+.welcome1 {
+    display:flex;
+    flex-direction: row;
+    color: white;
+    border-top: solid 5px gold;
+}
+
+.welcome1 h1{
+    font-size: 70px;
+    margin-left: 50px;
+    margin-top: 40px;
+    margin-bottom: 25px;
+}
+
+.welcome1 p{
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+.welcome1 img{
+    height: 400px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+
+
+.vidTitle {
+    border-top: solid 5px gold;
+    border-bottom: solid 5px gold;
+}
+
+
+.embed-border {
+    border: solid 2px white;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 30px
+}
+
+.white{
+    color: white;
+    margin-left: 100px;
+}
+
+.indexHome {
+    color:white;
+    margin-top: 100px;
+}
+
+.indexHome h1{
+    font-weight: bold;
+    color: red;
+}
+
+.indexHome hr{
+    border-color: gold !important;
+}
+
+.subheading {
+    color:red;
+}
+
+.subheading-gold {
+    color: gold;
+}
+
+
+
+
+
 /*breaking news flex-box - placeholder*/
 #Flex1 {
     display:flex;
@@ -365,4 +437,39 @@ ul.timeline-list li:before {
 /*making the text of the album title white*/
 .albumTitle {
     color: white !important;
+}
+
+
+
+
+
+
+/*Awards*/
+
+#hide {
+    color:black;
+}
+
+.awardName {
+    color: white;
+    font-size: 35px;
+}
+
+/*needed flexbox to arrange the accordions + titles. 
+added border to break up the page a bit - looked boring
+cannot work out how to colour the accordions*/
+.allAccordions {
+    display: flex;
+    flex-direction: row;
+    border-bottom: double 6px gold;
+}
+
+
+/*flex1 made all the accordions equal in size*/
+.eachAccordion {
+    flex: 1;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
