@@ -16,43 +16,51 @@ footer {
     font-family: 'Oswald', sans-serif;
 }
 
+.nav-item{
+    margin-bottom: 3px;
+}
+
 /*the small image on the right of the nav bar - logo*/
 .navbar-brand {
     width:70px;
     padding: 0;
 }
 
+#mobileNav {
+    display:none
+}
+
 
 .welcome1 {
-    display:flex;
-    flex-direction: row;
     color: white;
-    border-top: solid 5px gold;
+    border-top: double 5px gold;
+    font-size: 20px;
+    margin-bottom:15px;
 }
 
 .welcome1 h1{
     font-size: 70px;
     margin-left: 50px;
-    margin-top: 40px;
-    margin-bottom: 25px;
+    margin-top: 30px;
 }
 
 .welcome1 p{
-    font-size: 20px;
     margin-left: 50px;
+    float: right;
 }
 
 .welcome1 img{
-    height: 400px;
+    width: 250px;
     margin-left: 50px;
     margin-right: 50px;
+    float: left;
 }
 
 
 
 .vidTitle {
-    border-top: solid 5px gold;
-    border-bottom: solid 5px gold;
+    border-top: double 5px gold;
+    border-bottom: double 5px gold;
 }
 
 
@@ -73,13 +81,18 @@ footer {
     margin-top: 100px;
 }
 
+.indexHome .pb-4{
+    border-bottom: double 5px gold
+}
+
 .indexHome h1{
     font-weight: bold;
     color: red;
 }
 
 .indexHome hr{
-    border-color: gold !important;
+    opacity: 100%;
+    border-top: double 5px gold !important;
 }
 
 .subheading {
@@ -133,7 +146,7 @@ font-family: 'Oswald', sans-serif
 
 /*Quiz below*/
 /*bigger gap between title and first question box*/
-form{
+.quizBody form{
     margin-top:20px;
 }
 
@@ -160,12 +173,18 @@ form{
 }
 
 /*the question boxes formatting*/
+
+.bQuizPage hr {
+    width: 85%;
+    opacity: 100%;
+    border-top: double 5px gold;
+}
+
 .question {
     width:45%;
     margin-bottom: 20px;
     background-color: #ffffff;
-    padding:20px;
-    border: 8px solid #FFD700;
+    padding:10px;
     color:#000000
 }
 
@@ -300,7 +319,7 @@ ul.timeline-list li {
 
 /*the timeline boxes*/
 .timeline_content {
-	border: 8px solid #FFD700;
+	border: 8px double #FFD700;
 	background-color:#fff
 }
 
@@ -376,6 +395,7 @@ ul.timeline-list li:before {
 .lightbox-gallery .img-fluid:hover {
     border: 4px solid gold !important;
 }
+
 
 
 
@@ -480,15 +500,26 @@ cannot work out how to colour the accordions*/
 /*media variations - responsive*/
 
 @media screen and (max-width: 768px) {
-    /*index page*/
+
+    #mobileNav{
+        display:block;
+    }
+
+    #computerNav{
+        display:none;
+    }
+
+
     /*welcome message section*/
     .welcome1 {
         flex-direction: column;
     }
 
+    /*
     .mobile-welcome{
-        flex-direction:row;
-    }
+        flex-direction: row;
+    }*/
+
     .welcome1 h1{
         margin-left: 5px;
         margin-top: 5px
@@ -499,9 +530,8 @@ cannot work out how to colour the accordions*/
     }
     
     .welcome1 img{
-        height: 200px;
-        margin-left: 5px;
-        margin-right: 0px;
+        width: 250px;
+        float: center;
     }
 
     /*video section*/
@@ -556,6 +586,7 @@ cannot work out how to colour the accordions*/
     /*the long timeline line*/
     ul.timeline-list:before {
         display: none;
+        width:100%;
     }
 
     /*long paragraphs of timeline - text*/
@@ -579,13 +610,21 @@ cannot work out how to colour the accordions*/
 	    display:none;
     }
 
+
     /*Awards title wasnt fitting right*/
-    #experience {
+    .awardBody #experience {
         font-size: 60px;
     }
 
     /*awards titles wasnt fitting right*/
     #emoji {
-        font-size: 50px;
+        display:none;
     }
+
+
+    /*quiz*/
+    .bQuizPage hr {
+        width: 100%;
+    }
+
 }
