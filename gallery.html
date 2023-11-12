@@ -19,18 +19,56 @@
 
 <!--same start to the body as other pages except body class-->
 <body class="galleryBody">
-  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-    <img class="navbar-brand" id="logo" src="https://drive.google.com/uc?export=view&id=12zlP8KyFG5eth6QyB8gLtkoe9w14UL-S">
-    <ul class="nav nav-tabs">
-      <li class="nav-item"><a class="nav-link fs-4" href="index.html">Home</a></li>
-      <li class="nav-item"><a class="nav-link fs-4" href="timeline.html">Timeline</a></li>
-      <li class="nav-item"><a class="nav-link fs-4" href="discography.html">Discography</a></li>
-      <li class="nav-item"><a class="nav-link fs-4" href="awards.html">Awards</a></li>
-      <li class="nav-item"><a class="nav-link fs-4" href="gallery.html">Gallery</a></li>
-      <li class="nav-item"><a class="nav-link fs-4" href="quiz.html">Quiz</a></li>
-    </ul>
-  </nav>
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark" id="computerNav">
+    <img class="navbar-brand" id="logo" src="lionCrop.jpg">
+  <ul class="nav nav-tabs">
+    <li class="nav-item"><a class="nav-link fs-4" href="index.html">Home</a></li>
+    <li class="nav-item"><a class="nav-link fs-4" href="timeline.html">Timeline</a></li>
+    <li class="nav-item"><a class="nav-link fs-4" href="discography.html">Discography</a></li>
+    <li class="nav-item"><a class="nav-link fs-4" href="awards.html">Awards</a></li>
+    <li class="nav-item"><a class="nav-link fs-4" href="gallery.html">Gallery</a></li>
+    <li class="nav-item"><a class="nav-link fs-4" href="quiz.html">Quiz</a></li>
+  </ul>
+</nav>
 <!--end of nav bar-->
+
+
+<nav class="navbar navbar-dark bg-dark fixed-top" id="mobileNav">
+    <div class="container-fluid">
+        <img class="navbar-brand" id="logo" src="lionCrop.jpg">
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Planet Beyoncé</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="timeline.html">Timeline</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="discography.html">Discography</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="awards.html">Awards</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gallery.html">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="quiz.html">Quiz</a>
+              </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
   
 
 <!--lightbox of the gallery so can make the pictures bigger-->
