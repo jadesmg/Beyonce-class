@@ -17,8 +17,8 @@
 <!--the same body as all the pages (except the class of the body)
 includes the navigation bar as this is the same for all pages-->
 <body class="indexBody">
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-      <img class="navbar-brand" id="logo" src="lionCrop.jpg">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark" id="computerNav">
+        <img class="navbar-brand" id="logo" src="lionCrop.jpg">
       <ul class="nav nav-tabs">
         <li class="nav-item"><a class="nav-link fs-4" href="index.html">Home</a></li>
         <li class="nav-item"><a class="nav-link fs-4" href="timeline.html">Timeline</a></li>
@@ -30,24 +30,72 @@ includes the navigation bar as this is the same for all pages-->
     </nav>
     <!--end of nav bar-->
 
+<!--a hamburger menu for the navbar on -->
+    <nav class="navbar navbar-dark bg-dark fixed-top" id="mobileNav">
+        <div class="container-fluid">
+            <img class="navbar-brand" id="logo" src="lionCrop.jpg">
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Planet Beyoncé</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="timeline.html">Timeline</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="discography.html">Discography</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="awards.html">Awards</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">Gallery</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="quiz.html">Quiz</a>
+                  </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!--the banner image under the navigation bar-->
   <img class="img-fluid" src="planetBeyonce.jpg" alt="Planet Beyonce Logo with Beyonce & Lion on Black">
-
-  
 
 
 
 
 <!--Welcome Message-->
 <div class="welcome1">
-    <div>
-    <img src="salute.jpg">
-    </div>
-    <div>
-<h1>Welcome</h1>
-<p>Welcome to Planet Beyonce, your online source for all things Queen Bee. 
+    <!--<div class="mobile-welcome">-->
+    <img class="img-fluid"src="salute.jpg">
+    <p> <h1>Welcome</h1>
     <br>
-    Here you will find the all the infor and latest news about Beyonce. 
+        Welcome to Planet Beyonce, your online source for all things Queen Bee. 
+    <br>
+    Here you will find the all the information and latest news about Beyonce. 
     <br>
     We resepct that our queen Beyonce has stepped away from the limelight a bit recently and we respect that.
     <br>
@@ -56,9 +104,18 @@ includes the navigation bar as this is the same for all pages-->
     We would love to have you join our little fanbase community.
     <br>
     *Salute*
-</div>
 </p>
 </div>
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -75,16 +132,40 @@ includes the navigation bar as this is the same for all pages-->
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!--News layout-->
 <div class="container indexHome">
     <!--Section: News of the day-->
-    <section class="border-bottom border-5 pb-4 mb-5 border-warning">
+    <section class=" pb-4 mb-5 ">
       <div class="row gx-5">
         <div class="col-md-6 mb-4">
           <div class="bg-image hover-overlay ripple shadow-2-strong rounded-5" data-mdb-ripple-color="light">
             <img src="Film.jpg" class="img-fluid" />
-            <a href="#!">
-              <div class="mask";></div>
+            <a href="#!"> <!--Add link to something here??????-->
+              <div class="mask"></div>
             </a>
           </div>
         </div>
@@ -267,6 +348,46 @@ includes the navigation bar as this is the same for all pages-->
 -->
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--very basic flexbox style template for latest news. not sure what to do with this bit.
+https://getbootstrap.com/docs/5.3/components/card/    <<<<<<<<<basic card bootstrap info
+https://www.bootdey.com/snippets/tagged/news       <<<<<<some good examples/templates that can be adapted
+-->
+<!--    <div class=News id=Flex1>
+      <h2 id=Flex1Head>Latest News</h2>
+      <img class=NewsImg id=NewsImg1>
+      <p class=NewsP>news 1</p>
+      <img class=NewsImg id=NewsImg2>
+      <p class=NewsP>news 2</p>
+      <img class=NewsImg id=NewsImg3>
+      <p class=NewsP>news 3</p>
+    </div>
+-->
+
+
 <!--same ending as other pages-->    
     <script src="main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
@@ -277,3 +398,4 @@ includes the navigation bar as this is the same for all pages-->
   <p id=copyWright> ©copyright 2023 Team 11 </p>
 </footer>
 </html>
+</body>
