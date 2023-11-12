@@ -17,17 +17,56 @@
     <title>Planet Beyoncé</title>
 </head>
 <body class="timeBody">
-        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-          <img class="navbar-brand" id="logo" src="lionCrop.jpg">
-          <ul class="nav nav-tabs">
-            <li class="nav-item"><a class="nav-link fs-4" href="index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link fs-4" href="timeline.html">Timeline</a></li>
-            <li class="nav-item"><a class="nav-link fs-4" href="discography.html">Discography</a></li>
-            <li class="nav-item"><a class="nav-link fs-4" href="awards.html">Awards</a></li>
-            <li class="nav-item"><a class="nav-link fs-4" href="gallery.html">Gallery</a></li>
-            <li class="nav-item"><a class="nav-link fs-4" href="quiz.html">Quiz</a></li>
-          </ul>
-        </nav>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark" id="computerNav">
+        <img class="navbar-brand" id="logo" src="lionCrop.jpg">
+      <ul class="nav nav-tabs">
+        <li class="nav-item"><a class="nav-link fs-4" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link fs-4" href="timeline.html">Timeline</a></li>
+        <li class="nav-item"><a class="nav-link fs-4" href="discography.html">Discography</a></li>
+        <li class="nav-item"><a class="nav-link fs-4" href="awards.html">Awards</a></li>
+        <li class="nav-item"><a class="nav-link fs-4" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link fs-4" href="quiz.html">Quiz</a></li>
+      </ul>
+    </nav>
+    <!--end of nav bar-->
+
+<!--a hamburger menu for the navbar on -->
+    <nav class="navbar navbar-dark bg-dark fixed-top" id="mobileNav">
+        <div class="container-fluid">
+            <img class="navbar-brand" id="logo" src="lionCrop.jpg">
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Planet Beyoncé</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="timeline.html">Timeline</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="discography.html">Discography</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="awards.html">Awards</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">Gallery</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="quiz.html">Quiz</a>
+                  </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
 
   
 <!--This is the original of the head styles so it is a little different but same function 
@@ -42,7 +81,7 @@
                           <h3>A Timeline</h3>
                           <!--the random bee image - thought it was cute to threw it in here but not necessary. Design isnt my strong suit-->
                           <img id="bee" src="QueenBeeCrop.jpg">
-                          <p>From a Child of Destiny to Queen of the Hive</p>
+                          <p id="subHeadingBee">From a Child of Destiny to Queen of the Hive</p>
                       </div>
                   </div>
               </div>
@@ -55,11 +94,14 @@
                           <div class="timeline_content">
                              <span>1981–1996</span>
                              <h4>Early life and career beginnings</h4>
-                             <p>Beyoncé Giselle Knowles was born on September 4, 1981, in Houston, Texas.
-                                She grew up with her sister Solange Piaget Knowles who was born June 24, 1986.
-                                At age 7 Beyoncé won a school talent show singing John Lennon's "Imagine" beating 15/16-year-olds.  
-                                She later attended the High School for the Performing and Visual Arts.
+                             <p>Beyoncé Giselle Knowles was born on September 4, 1981, in Houston, Texas and grew up with her sister Solange Piaget Knowles who was born June 24, 1986.
+                                <br>
+                                <br>
+                                At age 7 Beyoncé won a school talent show singing John Lennon's "Imagine" beating 15/16-year-olds. She later attended the High School for the Performing and Visual Arts.
+                                <br>
+                                <br>
                                 Beyoncé was also a member of the choir at her Church where she sang her first solo and was a soloist for two years.
+                                <br>
                                 She also performed in a girl group called "Girl's Tyme" during this time.
                                 Her Father later mangaged this group.
                             </p>
@@ -71,14 +113,19 @@
                           <div class="timeline_content">
                           <span>1997–2002</span>
                              <h4>Destiny's Child</h4>
-                             <p>The group "Girl's Tyme" changed their name to Destiny's Child in 1996, based upon a passage in the Book of Isaiah. 
+                             <p>The group "Girl's Tyme" changed their name to "Destiny's Child" in 1996, based upon a passage in the Book of Isaiah.
+                                <br> 
                                 In 1997, Destiny's Child released their major label debut song "Killing Time" on the soundtrack to the 1997 film Men in Black.
                                 In November, the group released their debut single and first major hit, "No, No, No". 
                                 They released their self-titled debut album in February 1998.
+                                <br>
+                                <br>
                                 The group won three Soul Train Lady of Soul Awards for Best R&B/Soul Album of the Year, Best R&B/Soul or Rap New Artist, and Best R&B/Soul Single for "No, No, No".
                                 This was the beginning of a successful girl group though there were a few changes in the members during this time.
                                 The remaining band members (Beyoncé, Rowland, and Williams) recorded "Independent Women Part I", which appeared on the soundtrack to the 2000 film Charlie's Angels. 
                                 It became their best-charting single, topping the U.S. Billboard Hot 100 chart for eleven consecutive weeks.
+                                <br>
+                                <br>
                                 Beyoncé also began acting during this time including roles in "Austin Powers Goldmember" and "The Fighting Temptations".
                              </p>
                           </div>
@@ -90,9 +137,13 @@
                           <span>2003–2005</span>
                              <h4>Dangerously in Love and Destiny Fulfilled</h4>
                              <p>Beyoncé's first solo recording was a feature on Jay-Z's song "'03 Bonnie & Clyde" released in October 2002,peaking at number four on the U.S. Billboard Hot 100 chart.
+                                <br>
+                                <br>
                                 On June 14, 2003, Beyoncé premiered songs from her first solo album Dangerously in Love during her first solo concert.
                                 The album sold 317,000 copies in its first week, debuted atop the Billboard 200, and has since sold 11 million copies worldwide.
                                 The album earned Beyoncé a then record-tying five awards at the 46th Annual Grammy Awards; Best Contemporary R&B Album, Best Female R&B Vocal Performance for "Dangerously in Love 2", Best R&B Song and Best Rap/Sung Collaboration for "Crazy in Love", and Best R&B Performance by a Duo or Group with Vocals for "The Closer I Get to You" with Luther Vandross.
+                                <br>
+                                <br>
                                 Destiny Fulfilled, the final studio album by Destiny's Child, was released on November 15, 2004, in the US and peaked at number two on the Billboard 200
                                 The group accepted a star on the Hollywood Walk of Fame in March 2006.
                                 As a group they sold 60 million records worldwide.
@@ -108,11 +159,17 @@
                              <p>
                                 Beyoncé's second solo album B'Day was released on September 4, 2006, in the US, to coincide with her twenty-fifth birthday. 
                                 It sold 541,000 copies in its first week and debuted atop the Billboard 200, becoming Beyoncé's second consecutive number-one album in the United States.
+                                <br>
+                                <br>
                                 At the 49th Annual Grammy Awards (2007), B'Day was nominated for five Grammy Awards, including Best Contemporary R&B Album, Best Female R&B Vocal Performance for "Ring the Alarm" and Best R&B Song and Best Rap/Sung Collaboration"for "Déjà Vu". 
                                 B'Day won the award for Best Contemporary R&B Album.
+                                <br>
+                                <br>
                                 She also stared in The Pink Panther opposite Steve Martin, grossing $158.8 million at the box office worldwide and Dreamgirls opposite Jennifer Hudson, Jamie Foxx, and Eddie Murphy playing a pop singer based on Diana Ross.
                                 Dreamgirls received acclaim from critics and grossed $154 million internationally. 
                                 To promote the film, Beyoncé released "Listen" as the lead single from the soundtrack album. 
+                                <br>
+                                <br>
                                 In April 2007, Beyoncé embarked on The Beyoncé Experience, her first worldwide concert tour, visiting 97 venues and grossed over $24 million.
                              </p>
                           </div>
@@ -127,12 +184,18 @@
                             I Am... Sasha Fierce was released on November 18, 2008, in the United States.
                             The album formally introduces Beyoncé's alter ego Sasha Fierce, conceived during the making of her 2003 single "Crazy in Love". 
                             It sold 482,000 copies in its first week, debuting atop the Billboard 200, and giving Beyoncé her third consecutive number-one album in the US.
+                            <br>
+                            <br>
                             Beyoncé further expanded her acting career, starring as blues singer Etta James in the 2008 musical biopic Cadillac Records. 
                             Her performance in the film received praise from critics, and she garnered several nominations for her portrayal of James, including a Satellite Award nomination for Best Supporting Actress, and a NAACP Image Award nomination for Outstanding Supporting Actress. 
                             Beyoncé donated her entire salary from the film to Phoenix House, an organization of rehabilitation centers for heroin addicts around the country.
+                            <br>
+                            <br>
                             At the 52nd Annual Grammy Awards, Beyoncé received ten nominations, including Album of the Year for I Am... Sasha Fierce, Record of the Year for "Halo", and Song of the Year for "Single Ladies (Put a Ring on It)", among others.
                             Beyoncé went on to win six of those nominations, breaking a record she previously tied in 2004 for the most Grammy awards won in a single night by a female artist with six.
                             Beyoncé announced a hiatus from her music career in January 2010, heeding her mother's advice, "to live life, to be inspired by things again".
+                            <br>
+                            <br>
                             During the break she and her father parted ways as business partners.                     
                            </p>
                         </div>
@@ -145,12 +208,20 @@
                            <h4>4 and Super Bowl XLVII halftime show</h4>
                            <p> On June 26, 2011, she became the first solo female artist to headline the main Pyramid stage at the 2011 Glastonbury Festival in over twenty years.
                             Her fourth studio album 4 was released two days prior in the US.
+                            <br>
+                            <br>
                             4 sold 310,000 copies in its first week and debuted atop the Billboard 200 chart, giving Beyoncé her fourth consecutive number-one album in the US. 
                             The album was preceded by two of its singles "Run the World (Girls)" and "Best Thing I Never Had".
                             The fourth single "Love on Top" spent seven consecutive weeks at number one on the Hot R&B/Hip-Hop Songs chart, while peaking at number 20 on the Billboard Hot 100, the highest peak from the album.
+                            <br>
+                            <br>
                             Beyoncé performed the American national anthem singing along with a pre-recorded track at President Obama's second inauguration in Washington, D.C.
+                            <br>
+                            <br>
                             The following month, Beyoncé performed at the Super Bowl XLVII halftime show, held at the Mercedes-Benz Superdome in New Orleans. 
                             The performance stands as the second most tweeted about moment in history at 268,000 tweets per minute. 
+                            <br>
+                            <br>
                             At the 55th Annual Grammy Awards, Beyoncé won for Best Traditional R&B Performance for "Love on Top". 
                        <!-- end of 6th timeline event -->
                        <!--7th timeline event-->
@@ -160,11 +231,17 @@
                            <h4>Beyoncé</h4>
                            <p>Beyoncé embarked on The Mrs. Carter Show World Tour on April 15 in Belgrade, Serbia; the tour included 132 dates that ran through to March 2014. 
                             It became the most successful tour of her career and one of the most successful tours of all time.
+                            <br>
+                            <br>
                             On December 13, 2013, Beyoncé unexpectedly released her eponymous fifth studio album on the iTunes Store without any prior announcement or promotion. 
                             The album debuted atop the Billboard 200 chart, giving Beyoncé her fifth consecutive number-one album in the US. 
                             This made her the first woman in the chart's history to have her first five studio albums debut at number one.
+                            <br>
+                            <br>
                             In April 2014, Beyoncé and Jay-Z officially announced their On the Run Tour. 
                             It served as the couple's first co-headlining stadium tour together.
+                            <br>
+                            <br>
                             In November, Forbes reported that Beyoncé was the top-earning woman in music for the second year in a row – earning $115 million in the year, more than double her earnings in 2013.                            
                            </p>
                         </div>
@@ -177,8 +254,12 @@
                            <h4>Lemonade and Everything Is Love</h4>
                            <p> In April 2016, Beyoncé released a teaser clip for a project called Lemonade. 
                             A one-hour film which aired on HBO on April 23, a corresponding album with the same title was released on the same day exclusively on Tidal.
+                            <br>
+                            <br>
                             Lemonade debuted at number one on the U.S. Billboard 200, making Beyoncé the first act in Billboard history to have their first six studio albums debut atop the chart; she broke a record previously tied with DMX in 2013. 
                             With all 12 tracks of Lemonade debuting on the Billboard Hot 100 chart, Beyoncé also became the first female act to chart 12 or more songs at the same time.
+                            <br>
+                            <br>
                             On June 6, 2018, Beyoncé and husband Jay-Z kicked-off the On the Run II Tour in Cardiff, United Kingdom. 
                             Ten days later, at their final London performance, the pair unveiled Everything Is Love, their joint studio album, credited under the name The Carters. 
                             Everything Is Love received generally positive reviews, and debuted at number two on the U.S. Billboard 200, with 123,000 album-equivalent units, of which 70,000 were pure album sales.                            
@@ -195,6 +276,8 @@
                             The film was accompanied by the surprise live album Homecoming: The Live Album.
                             It was later reported that Beyoncé and Netflix had signed a $60 million deal to produce three different projects, one of which is Homecoming. 
                             Homecoming received six nominations at the 71st Primetime Creative Arts Emmy Awards.
+                            <br>
+                            <br>
                             Beyoncé starred as the voice of Nala in the remake The Lion King, which was released in July 2019. 
                             Beyoncé is featured on the film's soundtrack, released on July 11, 2019, with a remake of the song "Can You Feel the Love Tonight" alongside Donald Glover, Billy Eichner and Seth Rogen, which was originally composed by Elton John.                            
                            </p>
@@ -208,10 +291,14 @@
                            <h4>Renaissance</h4>
                            <p>On June 15, 2022, Beyoncé officially announced her seventh studio album, titled Renaissance. 
                             The album was released on July 29, 2022.
+                            <br>
+                            <br>
                             The first single from Renaissance, "Break My Soul", was released on June 20, 2022. 
                             The song became Beyoncé's 20th top ten single on the Billboard Hot 100, and in doing so, Beyoncé joined Paul McCartney and Michael Jackson as the only artists in Hot 100 history to achieve at least twenty top tens as a solo artist and ten as a member of a group.
                             Renaissance debuted at number one on the Billboard 200 chart, and in doing so, Beyoncé became the first female artist to have her first seven studio albums debut at number one in the United States. 
                             "Break My Soul" concurrently rose to number 1 on the Billboard Hot 100, becoming the twelfth song to do so across her career discography.
+                            <br>
+                            <br>
                             On February 1, Beyoncé announced the Renaissance World Tour with dates in North America and Europe, becoming for a short-span the highest-grossing tour by a female artist. 
                             On July 28, Beyoncé appeared on "Delresto (Echoes)", the second single from rapper Travis Scott's album Utopia, eventually becoming her 100th career appearance on the Billboard Hot 100 chart (encompassing Destiny's Child, her solo career, and musical duo The Carters).                            
                            </p>
@@ -224,6 +311,7 @@
               </div>
           </div>
         </section>
+        
 <!--end of all unique body content-->
 
 
