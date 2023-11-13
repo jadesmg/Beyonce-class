@@ -16,21 +16,18 @@ footer {
     font-family: 'Oswald', sans-serif;
 }
 
-.nav-item{
-    margin-bottom: 3px;
-}
-
 /*the small image on the right of the nav bar - logo*/
 .navbar-brand {
     width:70px;
     padding: 0;
 }
 
+/*to hide this when not mobile*/
 #mobileNav {
     display:none
 }
 
-
+/*welcome message formatting*/
 .welcome1 {
     color: white;
     border-top: double 5px gold;
@@ -38,17 +35,20 @@ footer {
     margin-bottom:15px;
 }
 
+/*welcome message heading format*/
 .welcome1 h1{
     font-size: 70px;
     margin-left: 50px;
     margin-top: 30px;
 }
 
+/*welcome paragraph format*/
 .welcome1 p{
     margin-left: 50px;
     float: right;
 }
 
+/*welcome image format*/
 .welcome1 img{
     width: 250px;
     margin-left: 50px;
@@ -57,13 +57,19 @@ footer {
 }
 
 
-
+/*video section*/
 .vidTitle {
     border-top: double 5px gold;
     border-bottom: double 5px gold;
 }
 
+/*video title*/
+.white{
+    color: white;
+    margin-left: 100px;
+}
 
+/*video border*/
 .embed-border {
     border: solid 2px white;
     margin-left: 100px;
@@ -71,76 +77,38 @@ footer {
     margin-bottom: 30px
 }
 
-.white{
-    color: white;
-    margin-left: 100px;
-}
-
+/*news section*/
 .indexHome {
     color:white;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
+/*news section sub categories*/
 .indexHome .pb-4{
     border-bottom: double 5px gold
 }
 
+/*news section category heading - top news*/
 .indexHome h1{
     font-weight: bold;
     color: red;
 }
 
+/*news section straight line accross*/
 .indexHome hr{
     opacity: 100%;
     border-top: double 5px gold !important;
 }
 
-.subheading {
+/*news section category heading (not top news)*/
+.indexHome .subheading {
     color:red;
 }
 
-.subheading-gold {
+/*news title*/
+.indexHome .subheading-gold {
     color: gold;
 }
-
-
-
-
-
-/*breaking news flex-box - placeholder*/
-#Flex1 {
-    display:flex;
-    flex-wrap: wrap;
-    border: 3px solid red;
-}
-
-/*news appearance - placeholder*/
-.News {
-background-color: white;
-font-family: 'Oswald', sans-serif
-}
-
-/*news image - placeholder*/
-.NewsImg {
-    flex-basis: 25%;
-    flex-grow: 1;
-}
-  
-/*news paragraphs - placeholder*/
-.NewsP {
-    flex-basis: 75%;
-    flex-grow: 1;
-}
-
-/*flexbox news heading - placeholder*/
-#Flex1Head {
-    flex:1 0 100%;
-}
-
-
-
-
-
 
 
 
@@ -150,7 +118,7 @@ font-family: 'Oswald', sans-serif
     margin-top:20px;
 }
 
-/*the text style & __________________________flexbox - investigate if all are necessary*/
+/*quiz text style and formatting*/
 .quiz-container {
     width: 100%;
     margin: 0 auto;
@@ -159,7 +127,7 @@ font-family: 'Oswald', sans-serif
     flex-direction: column;
 }
 
-/*the title text specs*/
+/*quiz title text specs*/
 .quiz-container h1 {
 	font-size: 70px;
 	position: relative;
@@ -172,14 +140,14 @@ font-family: 'Oswald', sans-serif
     color: white;
 }
 
-/*the question boxes formatting*/
-
+/*quiz question boxes formatting*/
 .bQuizPage hr {
     width: 85%;
     opacity: 100%;
     border-top: double 5px gold;
 }
 
+/*quiz question*/
 .question {
     width:45%;
     margin-bottom: 20px;
@@ -210,12 +178,12 @@ label {
     justify-content: space-between !important;
 }
 
-/*space between dot to select answer and the answer option text*/
+/*quiz - space between dot to select answer and the answer option text*/
 input[type="radio"] {
     margin-right: 10px;
 }
 
-/*submit button*/
+/*quiz - submit button*/
 .submit-btn {
     display: block;
     margin: 20px auto;
@@ -228,7 +196,7 @@ input[type="radio"] {
     cursor: pointer;
 }
 
-/*numberical score*/
+/*quiz - numberical score*/
 .result {
     font-weight: bold;
     font-size: 40px;
@@ -239,16 +207,12 @@ input[type="radio"] {
     color: #FFD700;
 }
 
-/*without this it would all sit in a row*/
+/*quiz - without this it would all sit in a row*/
 .d-flex{
     display: flex; 
     flex-direction: column; 
     align-items: center;
 }
-
-
-
-
 
 
 /*for timeline*/
@@ -369,10 +333,6 @@ ul.timeline-list li:before {
 }
 
 
-
-
-
-
 /*Photo gallery*/
 /*the writing style*/
 .lightbox-gallery p{
@@ -395,9 +355,6 @@ ul.timeline-list li:before {
 .lightbox-gallery .img-fluid:hover {
     border: 4px solid gold !important;
 }
-
-
-
 
 
 /*discography*/
@@ -459,16 +416,13 @@ ul.timeline-list li:before {
 }
 
 
-
-
-
-
 /*Awards*/
-
+/*to make space between ward emojis the title text*/
 #hide {
     color:black;
 }
 
+/*awarding bodies name format*/
 .awardName {
     color: white;
     font-size: 35px;
@@ -494,72 +448,65 @@ cannot work out how to colour the accordions*/
 }
 
 
-
-
-
 /*media variations - responsive*/
-
 @media screen and (max-width: 768px) {
-
+/*making mobile naviagtion alternative visable*/
     #mobileNav{
         display:block;
+        border-bottom: double 5px gold;
     }
-
+/*hiding computer nav*/
     #computerNav{
         display:none;
     }
 
-
-    /*welcome message section*/
+/*welcome message section - column instead of row*/
     .welcome1 {
         flex-direction: column;
     }
 
-    /*
-    .mobile-welcome{
-        flex-direction: row;
-    }*/
-
+/*alternative formatting for welcome msg heading*/
     .welcome1 h1{
         margin-left: 5px;
         margin-top: 5px
     }
-    
+
+/*alternative formatting for welcome msg paragraph*/  
     .welcome1 p{
         margin-left: 5px;
     }
-    
+
+/*alternative formatting for welcome img*/
     .welcome1 img{
         width: 250px;
         float: center;
     }
 
-    /*video section*/
+/*video section*/
     .embed-border {
         margin-left: 5px;
         margin-right: 5px;
         margin-bottom: 5px
     }
     
+/*video title*/
     .white{
         margin-left: 5px;
     }
 
-
-
-    /*awards page*/
-    /*the title - removing the space between emojis and word*/
+/*awards page*/
+/*the title - removing the space between emojis and word*/
     #hide{
         display: none;
     }
 
-    /*making the accordions column organised and changing border appearance for mobiles*/
+/*making the accordions column organised and changing border appearance for mobiles*/
     .allAccordions {
         flex-direction: column;
         border-bottom: none;
     }
     
-    /*smalled margins and changing the border appearance for mobiles*/
+/*smalled margins and changing the border appearance for mobiles*/
     .eachAccordion {
         margin-top: 10px;
         margin-bottom: 10px;
@@ -569,27 +516,19 @@ cannot work out how to colour the accordions*/
         border-bottom: double 6px gold
     }
 
-
-
-    /*making question box bigger on phones as only took up percentage of space*/
+/*making question box bigger on phones as only took up percentage of space*/
     .question {
         width:100%;
     }
 
-
-
-
-
-
-
-    /*timeline page*/
-    /*the long timeline line*/
+/*timeline page*/
+/*the long timeline line*/
     ul.timeline-list:before {
         display: none;
         width:100%;
     }
 
-    /*long paragraphs of timeline - text*/
+/*long paragraphs of timeline - text*/
     ul.timeline-list li .timeline_content {
 	    width: 80%;
 	    color: #000000;
@@ -599,32 +538,31 @@ cannot work out how to colour the accordions*/
         margin-bottom: 15px;
     }
 
-    /*every second timeline card goes to the right*/
+/*every second timeline card goes to the right*/
     ul.timeline-list li:nth-child(2n) .timeline_content {
 	    float: center;
 	    text-align: right;
     }
 
-    /*the long timeline line DOTS*/
+/*the long timeline line DOTS*/
     ul.timeline-list li:before {
 	    display:none;
     }
 
 
-    /*Awards title wasnt fitting right*/
+/*Awards title wasnt fitting right*/
     .awardBody #experience {
         font-size: 60px;
     }
 
-    /*awards titles wasnt fitting right*/
+/*awards titles wasnt fitting right*/
     #emoji {
         display:none;
     }
 
 
-    /*quiz*/
+/*quiz*/
     .bQuizPage hr {
         width: 100%;
     }
-
 }
