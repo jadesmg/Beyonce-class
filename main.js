@@ -23,17 +23,34 @@ quizForm.addEventListener('submit', e => {
 
 
 
-//latest news - open link via button (didnt work the same as the others) - window.open("URL"), "_blank" - the blank opens it in new tab
-function relocate_home()
+//latest news - open link via button
+function relocate_news1()
 {
     window.open("https://www.hollywoodreporter.com/news/general-news/beyonce-premiere-renaissance-concert-film-london-los-angeles-1235628402/", "_blank");
 } 
 
+//latest news - open link via button
+function relocate_news2()
+{
+    window.open("https://www.bbc.co.uk/news/uk-wales-67360696", "_blank");
+} 
+
+
+function relocate_news3()
+{
+    window.open("https://www.bbc.co.uk/news/world-us-canada-67085113", "_blank");
+} 
+
+function relocate_news4()
+{
+    window.open("https://www.harpersbazaar.com/uk/fashion/fashion-news/g43861352/beyonce-renaissance-tour-wardrobe-fashion/", "_blank");
+}
 
 
 
-
-
+//doesnt work - tried other things and didnt manage to solve.
+//trying to make it when zoomed in on light box you can sroll on a mobile - not needing to use the arrows.
+//alternative is making the arrows visible without hovering but didnt solve that either.
 lightbox.option ({
     alwaysShowNavOnTouchDevices: true
 });
