@@ -1,7 +1,6 @@
 <!DOCTYPE html> 
 <html lang="en">
 <head>
-
 <!--This section seems to be need in the HEAD section for the lightbox gallery to work - i took it out and it broke so leaving it here  -->
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!------ ^^^^^^^^Include the above in your HEAD tag^^^^^^^^^^^^ ---------->
@@ -32,7 +31,7 @@
 </nav>
 <!--end of nav bar-->
 
-
+<!--phone nav bar-->
 <nav class="navbar navbar-dark bg-dark fixed-top" id="mobileNav">
     <div class="container-fluid">
         <img class="navbar-brand" id="logo" src="lionCrop.jpg">
@@ -69,38 +68,26 @@
       </div>
     </div>
   </nav>
+<!--end of phone nav bar-->
   
-
 <!--lightbox of the gallery so can make the pictures bigger-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
-
-
-
-
-
-  <!--the title format is a bit messed up here! will try to tidy fully at some point!-->
-
-
-
-
-
-
   <div class="lightbox-gallery text-center">
     <div class="container">
       <section class="experience pt-100 pb-100" id="experience">
         <div class="quiz-container">
-          <!--formating for the gallery-->
+<!--formating for the gallery-->
           <div class="col-xl-8 mx-auto text-center">
-            <!--title of page-->
+<!--title of page-->
             <h1>Beyoncé Photo Gallery</h1>
             <hr>
           </div>
         <div>
-        <!--sub category title-->
+<!--sub category title-->
           <p class="text-center">The Childhood Years</p>
         </div>
-        <!--the photos formatted into rows with specs for small, medium, and large screens-->
+<!--the photos formatted into rows with specs for small, medium, and large screens-->
         <div class="row photos">
           <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="BeyonceChild1.jpg" data-lightbox="photos"><img class="img-fluid" src="BeyonceChild1.jpg"></a></a></div>
           <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="Beyonce1990.jpg" data-lightbox="photos"><img class="img-fluid" src="Beyonce1990.jpg"></a></div>
@@ -110,10 +97,9 @@
           <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="BeyonceSchool.jpg" data-lightbox="photos"><img class="img-fluid" src="BeyonceSchool.jpg"></a></div>
         </div>
       </div>
-
 <!--end of 1st category of pics-->
 
-<!--same as above 2nd category so text inbetween-->
+<!--same as above but 2nd category so text inbetween-->
         <div class="intro">
           <p class="text-center">Destiny's Child Era</p>
         </div>
@@ -131,12 +117,10 @@
       </div>
   <!--end of 2nd pic category-->
 
-      <!--if adding another gallery category do not copy the 3 things below - section, div, div closing statements - as they are to be at the very bottom of the gallery code-->
+<!--if adding another gallery category do not copy the 3 things below - section, div, div closing statements - as they are to be at the very bottom of the gallery code-->
     </section>
   </div>
 </div>  
-
-
 
 <!--same ending as every page: bootstrap and javascript-->
 <script src="main.js"></script>
