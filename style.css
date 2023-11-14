@@ -332,6 +332,12 @@ ul.timeline-list li:before {
     font-family: 'Oswald', sans-serif
 }
 
+/*images in timeline*/
+.timeImg {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
 
 /*Photo gallery*/
 /*the writing style*/
@@ -463,17 +469,13 @@ cannot work out how to colour the accordions*/
 /*welcome message section - column instead of row*/
     .welcome1 {
         flex-direction: column;
+        margin-left: 10px;
     }
 
 /*alternative formatting for welcome msg heading*/
     .welcome1 h1{
         margin-left: 5px;
         margin-top: 5px
-    }
-
-/*alternative formatting for welcome msg paragraph*/  
-    .welcome1 p{
-        margin-left: 5px;
     }
 
 /*alternative formatting for welcome img*/
