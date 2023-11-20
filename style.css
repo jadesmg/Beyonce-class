@@ -7,6 +7,7 @@ body {
 footer {
     color:white;
     background-color: black;
+    text-align: center;
 }
 
 /*appearance of nav-bar links*/
@@ -56,11 +57,18 @@ footer {
     float: left;
 }
 
+.col-sm-6{
+    font-size:100px;
+    position:relative;
+    font-weight: bold;
+    cursor: pointer;
+  }
 
 /*video section*/
 .vidTitle {
     border-top: double 5px gold;
     border-bottom: double 5px gold;
+    text-align: center;
 }
 
 /*video title*/
