@@ -57,7 +57,7 @@ footer {
     float: left;
 }
 
-.col-sm-6{
+.galleryBody .col-sm-6{
     font-size:100px;
     position:relative;
     font-weight: bold;
