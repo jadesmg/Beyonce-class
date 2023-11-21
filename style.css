@@ -1,6 +1,7 @@
 /*every page has black background*/
 body {
     background-color: black !important;
+    font-family: 'Aclonica', sans-serif !important;
 }
 
 /*footer - all pages*/
@@ -14,7 +15,6 @@ footer {
 .nav-link {
     color: white !important;
     font-weight: bold;
-    font-family: 'Oswald', sans-serif;
 }
 
 /*the small image on the right of the nav bar - logo*/
@@ -40,7 +40,7 @@ footer {
 .welcome1 h1{
     font-size: 70px;
     margin-left: 50px;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 /*welcome paragraph format*/
@@ -130,7 +130,6 @@ footer {
 .quiz-container {
     width: 100%;
     margin: 0 auto;
-    font-family: 'Oswald', sans-serif;
     display: flex;
     flex-direction: column;
 }
@@ -234,7 +233,6 @@ input[type="radio"] {
     margin-bottom: 0px;
     color:#ffffff;
     background-color: black;
-    font-family: 'Oswald', sans-serif
 }
 
 /*the "from a child of destiny..." bit*/
@@ -312,7 +310,6 @@ ul.timeline-list li:nth-child(2n) .timeline_content {
 
 /*formatting of text inside the timeline cards*/
 .timeline_content h4 {
-    font-family: 'Oswald', sans-serif;
 	font-size: 30px;
 	font-weight: 600;
 	margin: 10px 0;
@@ -337,7 +334,6 @@ ul.timeline-list li:before {
 	font-size: 25px;
 	font-weight: 500;
 	color: #000000;
-    font-family: 'Oswald', sans-serif
 }
 
 /*images in timeline*/
@@ -352,7 +348,6 @@ ul.timeline-list li:before {
 .lightbox-gallery p{
     color:#fff;
     font-size: 50px;
-    font-family: 'Oswald', sans-serif;
 }
 
 /*the space at the bottom of the pics - otherwise they touch*/
@@ -465,6 +460,10 @@ cannot work out how to colour the accordions*/
 /*media variations - responsive*/
 @media screen and (max-width: 768px) {
 /*making mobile naviagtion alternative visable*/
+    body {
+        font-size: 5.4vw
+    }
+
     #mobileNav{
         display:block;
         border-bottom: double 5px gold;
@@ -559,11 +558,10 @@ cannot work out how to colour the accordions*/
 	    display:none;
     }
 
-
-/*Awards title wasnt fitting right*/
+/*Awards title wasnt fitting right
     .awardBody #experience {
         font-size: 60px;
-    }
+    }*/
 
 /*awards titles wasnt fitting right*/
     #emoji {
